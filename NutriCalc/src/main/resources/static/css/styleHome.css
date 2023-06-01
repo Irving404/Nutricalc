@@ -171,7 +171,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: url("../images/cubiertos.png");
+/*	background-image: url("../images/cubiertos.png");*/
 	background-repeat: no-repeat;
 	background-image: fixed;
 	background-size: cover;
@@ -268,11 +268,11 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: url("../images/platofrutas.png");
+/*	background-image: url("../images/platofrutas.png");*/
 	background-repeat: no-repeat;
 	background-image: fixed;
 	background-size: cover;
 	background-size: auto auto;
 	background-position: center, center;
-	opacity: 0.5;
+/*	opacity: 0.5;*/
 }

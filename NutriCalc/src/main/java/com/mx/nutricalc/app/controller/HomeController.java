@@ -1,5 +1,7 @@
 package com.mx.nutricalc.app.controller;
 
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +19,7 @@ public class HomeController {
 	}
 	
 	@PostMapping({"/home"})
-	public String home(Model model, @RequestParam String userName,@RequestParam String password) {
+	public String home(Model model, String userName,@RequestParam String password) {
 		System.out.println("User: " + userName);
 		System.out.println("Pass: " + password);
 		model.addAttribute("user", userName);
