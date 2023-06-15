@@ -15,6 +15,7 @@ public class HomeController {
 
 	@GetMapping({"/","/index","login"})
 	public String login(Model model) {
+		model.addAttribute("titulo","NUTI");
 		return "login";
 	}
 	
@@ -23,6 +24,6 @@ public class HomeController {
 		System.out.println("User: " + userName);
 		System.out.println("Pass: " + password);
 		model.addAttribute("user", userName);
-		return "home";
+		return "index";
 	}
 }

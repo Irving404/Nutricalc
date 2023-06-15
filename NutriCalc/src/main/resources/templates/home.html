@@ -23,9 +23,6 @@
 		<div class="var2">
 			<img th:src="@{/images/NutriCalc.png}" class="imgLogo" width="auto" height="100%">
 		</div>
-
-
-
 	</div>
 	<div class="flex-container">
 		<div class="cont1">
@@ -34,23 +31,16 @@
 					DATOS
 				</div>
 				<div class="datos">
-					<form>
-						<fieldset>
-							<legend>Sexo</legend>
-							<div class="select">
-								<select id="standard-select">
-									<option value="Option 1">Option 1</option>
-									<option value="Option 2">Option 2</option>
-									<option value="Option 3">Option 3</option>
-									<option value="Option 4">Option 4</option>
-									<option value="Option 5">Option 5</option>
-									<option value="Option length">Option that has too long of a value to fit</option>
-								</select>
-								<span class="focus"></span>
-							</div>
-						</fieldset>
-						<button onclick="">Click me</button>
-					</form>
+					<div class="select">
+						<select>
+							<option value="0">SEXO</option>
+							<option value="M">Masculino</option>
+							<option value="F">Femenino</option>
+						</select>
+					</div>
+					<div>
+						<button id="btnDatos">Click me</button>
+					</div>
 				</div>
 			</div>
 			<div class="cont12">
@@ -157,7 +147,6 @@
 								</table>
 								<div>
 									<a class="btn btn-default" href="/add-todo">Add a Todo</a>
-
 								</div>
 							</div>
 					</div>
