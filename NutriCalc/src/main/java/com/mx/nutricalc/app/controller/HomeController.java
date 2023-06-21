@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 //@RequestMapping("/nutricalc")
 public class HomeController {
 
-	@GetMapping({"/","/index","login"})
+	@GetMapping({"/","/index","/login"})
 	public String login(Model model) {
 		model.addAttribute("titulo","NUTI");
 		return "login";
@@ -24,6 +24,12 @@ public class HomeController {
 		System.out.println("User: " + userName);
 		System.out.println("Pass: " + password);
 		model.addAttribute("user", userName);
+		return "index";
+	}
+	
+	@GetMapping({"/home"})
+	public String getHome(Model model) {
+		
 		return "index";
 	}
 }
